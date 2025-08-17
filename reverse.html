@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Loop</title>
+  <script>
+    function reverseLoop() {
+      let start = prompt("Enter the starting value:");
+      let end = prompt("Enter the ending value:");
+
+      // Convert to numbers
+      start = Number(start);
+      end = Number(end);
+
+      // Check if start is less than end
+      if (start < end) {
+        alert("Starting value must be greater than ending value!");
+      } else {
+        // Run reverse loop
+        for (let i = start; i >= end; i--) {
+          document.write(i + "<br>");
+        }
+      }
+    }
+  </script>
+</head>
+<body onload="reverseLoop()">
+
+</body>
+</html>
